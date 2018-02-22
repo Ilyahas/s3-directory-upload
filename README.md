@@ -30,13 +30,14 @@ const upload = require('s3-directory-upload')
 const directoryName = 'static'
 
 const credentials = {
+  "host": "<Custom host to upload directory>", // [optional], default Amazon Host
   "accessKeyId": "<Your Access Key Id>",
   "secretAccessKey": "<Your Secret Access Key>",
   "bucketName": "<Your Bucket Name>"
 }
-const deleteFilesInBucket = true; // default false
+const deleteExistingFilesInBucket = true; // default false
 
-upload(directoryName, credentials, deleteFilesInBucket)
+upload(directoryName, credentials, deleteExistingFilesInBucket)
 ```
 
 ## CLI
@@ -51,3 +52,5 @@ For the AWS Credentials you need a ENV variables called `ACCESS_KEY_ID`, `SECRET
 
 
 **!** If you use CLI to upload files they will be added without deleting existing files in the bucket.
+
+**!** CLI does not support host changing
