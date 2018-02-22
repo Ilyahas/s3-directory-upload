@@ -1,0 +1,39 @@
+{
+  "name": "s3-directory-upload",
+  "version": "1.0.1",
+  "description": "upload site to AWS S3",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Ilyahas/s3-directory-upload.git"
+  },
+  "keywords": [
+    "S3", "AWS", "Upload"
+  ],
+  "author": {
+    "name": "Ilya Kot",
+    "email": "info-site@ukr.net"
+  },
+  "bin": {
+    "s3-folder-upload": "./bin/s3-directory-upload.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ilyahas/s3-directory-upload.git/issues"
+  },
+  "homepage": "https://github.com/Ilyahas/s3-directory-upload.git#README",
+  "dependencies": {
+    "async": "2.6.0",
+    "aws-sdk": "2.190.0",
+    "dotenv": "5.0.0",
+    "fs": "0.0.1-security",
+    "log-update": "2.3.0",
+    "path": "0.12.7"
+  }
+}
