@@ -35,7 +35,7 @@ const credentials = {
   "bucketName": "<Your Bucket Name>"
 }
 
-s3UploadDirectory(directoryName, credentials)
+upload(directoryName, credentials)
 ```
 
 ## CLI

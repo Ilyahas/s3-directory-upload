@@ -1,8 +1,9 @@
 {
   "name": "s3-directory-upload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "upload site to AWS S3",
   "main": "index.js",
+  "preferGlobal": "true",
   "directories": {
     "lib": "lib"
   },
