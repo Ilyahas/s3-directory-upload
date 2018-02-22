@@ -1,6 +1,6 @@
 {
   "name": "s3-directory-upload",
-  "version": "1.0.8",
+  "version": "2.0.1",
   "description": "upload directory to AWS S3",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,7 @@
     "url": "git+ssh://git@github.com:Ilyahas/s3-directory-upload.git"
   },
   "keywords": [
-    "S3", "AWS", "Upload"
+    "s3", "aws", "upload", "host", "directory", "folder", "versions", "file"
   ],
   "author": {
     "name": "Ilya Kot",
