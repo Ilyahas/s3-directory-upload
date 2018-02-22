@@ -21,7 +21,7 @@
     "email": "info-site@ukr.net"
   },
   "bin": {
-    "s3-folder-upload": "./bin/s3-directory-upload.js"
+    "s3-directory-upload": "./bin/s3-directory-upload.js"
   },
   "license": "MIT",
   "bugs": {
