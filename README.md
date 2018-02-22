@@ -1,6 +1,6 @@
 # s3 directory upload
 
-Script to upload directory (all folders and files in it) to a S3 bucket by using official Amazon SDK.
+Script to upload directory to a S3 bucket by using official Amazon SDK.
 
 ## AWS Credentials
 
@@ -13,7 +13,13 @@ In order to use this module, you'll need to have AWS Credentials. You can load t
 ## Install
 
 ```bash
-npm install --save s3-directory-upload
+npm install s3-directory-upload -S
+```
+
+In case you want to use the CLI, you can install it globally:
+
+```bash
+npm install -g s3-directory-upload
 ```
 
 ## Require
@@ -32,3 +38,13 @@ const deleteFilesInBucket = true; // default false
 
 upload(directoryName, credentials, deleteFilesInBucket)
 ```
+
+## CLI
+```bash
+s3-directory-upload <directory>
+
+Example:
+s3-directory-upload static
+```
+
+For the AWS Credentials you need a ENV variables called `ACCESS_KEY_ID`, `SECRET_ACCESS_KEY` and `BUCKET_NAME` in .env file.
