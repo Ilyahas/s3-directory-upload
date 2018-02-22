@@ -1,6 +1,6 @@
 {
   "name": "s3-directory-upload",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "upload directory to AWS S3",
   "main": "index.js",
   "directories": {

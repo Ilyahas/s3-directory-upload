@@ -1,6 +1,6 @@
 # s3 directory upload
 
-Script to upload directory to a S3 bucket by using official Amazon SDK.
+Script to upload directory (all folders and files in it) to a S3 bucket by using official Amazon SDK.
 
 ## AWS Credentials
 
@@ -41,10 +41,13 @@ upload(directoryName, credentials, deleteFilesInBucket)
 
 ## CLI
 ```bash
-s3-directory-upload <directory>
+$ s3-directory-upload <directory>
 
 Example:
-s3-directory-upload static
+$ s3-directory-upload static
 ```
 
 For the AWS Credentials you need a ENV variables called `ACCESS_KEY_ID`, `SECRET_ACCESS_KEY` and `BUCKET_NAME` in .env file.
+
+
+**!** If you use CLI to upload files they will be added without deleting existing files in the bucket.
